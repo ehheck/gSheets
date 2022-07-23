@@ -1,3 +1,6 @@
+Grab # of characters from a cell
+=LEFT(text, [number_of_characters])
+
 Combine 2 columns
 =TEXTJOIN ( delimiter, ignore_empty, text1, [text2, …] )
 
@@ -6,3 +9,6 @@ Combine 2 columns while stripping extra characters (dash in this case)
 
 Combine 2 colomns, strip dashes & spaces, convert to lowercase
 =LOWER(SUBSTITUTE(SUBSTITUTE(TEXTJOIN("", TRUE, B1, C1), "-", ""), " ", ""))
+
+Combine first character of one column with a nother column while stripping dashes and spaces, converting to lower case
+=LOWER(SUBSTITUTE(SUBSTITUTE(TEXTJOIN("", TRUE, LEFT(B1, 1), C1), "-", ""), " ", ""))
