@@ -1,0 +1,8 @@
+Combine 2 columns
+=TEXTJOIN ( delimiter, ignore_empty, text1, [text2, …] )
+
+Combine 2 columns while stripping extra characters (dash in this case)
+=SUBSTITUTE(TEXTJOIN("", TRUE, B1, C1),"-", "")
+
+Combine 2 colomns, strip dashes & spaces, convert to lowercase
+=LOWER(SUBSTITUTE(SUBSTITUTE(TEXTJOIN("", TRUE, B1, C1), "-", ""), " ", ""))
