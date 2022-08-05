@@ -1,5 +1,5 @@
 Grab # of characters from a cell
-=LEFT(text, [number_of_characters])
+=LEFT(text, number_of_characters)
 
 Combine 2 columns
 =TEXTJOIN ( delimiter, ignore_empty, text1, [text2, …] )
