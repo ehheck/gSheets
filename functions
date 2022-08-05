@@ -10,5 +10,5 @@ Combine 2 columns while stripping extra characters (dash in this case)
 Combine 2 colomns, strip dashes & spaces, convert to lowercase
 =LOWER(SUBSTITUTE(SUBSTITUTE(TEXTJOIN("", TRUE, B1, C1), "-", ""), " ", ""))
 
-Combine first character of one column with a nother column while stripping dashes and spaces, converting to lower case
+Combine first character of one (B1) column with another column (C1) while stripping dashes and spaces, and converting to lower case
 =LOWER(SUBSTITUTE(SUBSTITUTE(TEXTJOIN("", TRUE, LEFT(B1, 1), C1), "-", ""), " ", ""))
